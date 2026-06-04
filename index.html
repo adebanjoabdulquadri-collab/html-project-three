@@ -6,6 +6,7 @@
     <title>Project 3</title>
   </head>
   <body>
+    <!-- Shifa Hospital -->
     <h1>Shifa Specialist Hospital</h1>
     <p>
       Welcome to <strong>Shifa Specialist Hospital</strong>,where quality
@@ -17,52 +18,42 @@
       all patients.
     </p>
     <hr />
+    <!-- links -->
     <h2>Quick Navigation</h2>
     <ul>
       <li>
-        <a href="https://projects-hazel-nine.vercel.app/?#about" target="_blank"
-          >About Us</a
-        >
+        <a href="#about">About Us</a>
       </li>
       <li>
-        <a href="https://projects-hazel-nine.vercel.app/?#about" target="_blank"
-          >Services</a
-        >
+        <a href="#hospital">Services</a>
       </li>
       <li>
-        <a href="https://projects-hazel-nine.vercel.app/?#about" target="_blank"
-          >Doctors</a
-        >
+        <a href="#doctors">Doctors</a>
       </li>
       <li>
-        <a href="https://projects-hazel-nine.vercel.app/?#about" target="_blank"
-          >Schedule</a
-        >
+        <a href="#schedule">Schedule</a>
       </li>
       <li>
-        <a href="https://projects-hazel-nine.vercel.app/?#about" target="_blank"
-          >Media center</a
-        >
+        <a href="#video">Media center</a>
       </li>
       <li>
-        <a href="https://projects-hazel-nine.vercel.app/?#about" target="_blank"
-          >Book Appointment</a
-        >
+        <a href="#appoint">Book Appointment</a>
       </li>
       <li>
-        <a href="https://projects-hazel-nine.vercel.app/?#about" target="_blank"
-          >Contact Us</a
-        >
+        <a href="#contact">Contact Us</a>
       </li>
     </ul>
     <hr />
-    <h2>About Our Hospital</h2>
+    <!-- About Our hospital -->
+    <h2 id="about">About Our Hospital</h2>
+    <!-- Image of our hospital  -->
     <img
       src="./images/hospital_image.png"
       alt="hospital"
       height="350px"
       width="700px"
     />
+    <!-- Our services to Humanity -->
     <p>
       Shifa Specialist Hospital has served patients for over 20 years, offering
       advanced medical care and highly qualified healthcare professionals.
@@ -72,7 +63,8 @@
       laboratory services.
     </p>
     <hr />
-    <h2>Hospital Services</h2>
+    <!-- Our General Hospital Services -->
+    <h2 id="hospital">Hospital Services</h2>
     <ul>
       <li>Emergency Care</li>
       <li>General Consultation</li>
@@ -84,29 +76,34 @@
       <li>Pediatric Care</li>
     </ul>
     <hr />
-    <h2>Our Medical Specialists</h2>
-    <table border="5" cellpadding="10">
+    <!-- Our Medical Specialists -->
+    <h2 id="doctors">Our Medical Specialists</h2>
+    <!-- First Table -->
+    <table border="1" cellpadding="10">
+      <!-- Taable Head  -->
       <th>Doctor</th>
       <th>Specialization</th>
       <th>Available days</th>
-
+      <!-- First Tble Row -->
       <tr>
+        <!-- Table Data(s) -->
         <td>Dr. Ahmad Yusuf</td>
         <td>Cardiology</td>
         <td>Monday - Wednesday</td>
       </tr>
-
+      <!-- Second Table Row -->
       <tr>
         <td>Dr. Fatima Ibrahim</td>
         <td>Pediatrics</td>
         <td>Tuesday - Friday</td>
       </tr>
-
+      <!-- Third table row -->
       <tr>
         <td>Dr. Musa Bello</td>
         <td>General Surgery</td>
         <td>Monday - Friday</td>
       </tr>
+      <!-- Fourth table Row -->
       <tr>
         <td>Dr. Maryam Aliyu</td>
         <td>Gynecology</td>
@@ -114,7 +111,8 @@
       </tr>
     </table>
     <hr />
-    <h2>Weekly Clinic Schedule</h2>
+    <!-- Weekly  Clinic table  schedule table   -->
+    <h2 id="schedule">Weekly Clinic Schedule</h2>
     <table border="1" cellpadding="10">
       <th>Day</th>
       <th>Department</th>
@@ -148,7 +146,9 @@
       </tr>
     </table>
     <hr />
+    <!-- Our Hospital Statistics -->
     <h2>Hospital Statistics</h2>
+    <!-- Table -->
     <table border="1" cellpadding="10">
       <th>Department</th>
       <th>Doctor</th>
@@ -176,7 +176,9 @@
     </table>
     <hr />
     <h2>Patient Education Center</h2>
-    <h3>Health Awareness Video</h3>
+    <!-- Health Awareness Video -->
+    <h3 id="video">Health Awareness Video</h3>
+    <!-- video -->
     <video
       src="./videos/health_awareness.mp4"
       controls
@@ -184,6 +186,7 @@
       height="200"
     ></video>
     <h3>Doctor's Welcome Message</h3>
+    <!-- Audio -->
     <audio controls>
       <source
         src="./Audio/mishary-rashid-alafasy-112-al-ikhlas-27-8903 - Copy (4).mp3"
@@ -191,20 +194,23 @@
       />
     </audio>
     <hr />
-    <h2>Book an Appointment</h2>
-    <form action="./index.html">
+    <h2 id="appoint">Book an Appointment</h2>
+    <!-- Form -->
+    <form action="">
+      <!-- Label for Name -->
       <label for="Name"><strong> Full Name:</strong></label>
       <br />
+      <!-- input "text"  placeholder"Enter  full name"-->
       <input
         type="text"
         name="Name"
         placeholder=" Enter Full Name"
       /><br /><br />
-
+      <!-- Label for email -->
       <label for="Email:"><strong> Email Address:</strong></label> <br />
 
       <input type="text" name="Name" placeholder="Enter email" /><br /><br />
-
+      <!-- Label for Phone number -->
       <label for="Phone Number:"><strong> Phone number:</strong> </label>
       <br /><input
         type="Phone Number"
@@ -213,15 +219,20 @@
       />
       <br />
       <br />
-
-      <label>Age:</label>
-      <input type="number" name="age" placeholder="" min="1" max="120" />
+      <!-- Label for Age -->
+      <label>Age:</label> <br />
+      <input type="number" name="age" placeholder="" />
       <br /><br />
-      <label>Gender:</label>
+      <!-- Label for Gender -->
+      <label>Gender:</label> <br />
+      <!-- Inpute type "radio" name"gender" Value="male"  -->
       <input type="radio" name="gender" value="male" />Male
       <input type="radio" name="gender" value="female" />Female <br /><br />
+      <!-- label for select department -->
       <label>Select Department</label><br />
+      <!-- select name"department" -->
       <select name="department">
+        <!-- option value=""--choose department -->
         <option value="">--Choose Department</option>
         <option value="Cardiology" selected>Cardiology</option>
         <option value="Pediatrics">Pediatrics</option>
@@ -230,7 +241,12 @@
         <option value="General Consultation">General Consultation</option>
         <br /><br /><br /></select
       ><br /><br />
+      <!-- Label for Preferred appointment -->
       <label>Preferred Appointment</label><br />
+      <!--input for
+        type="date"
+        name="appointment_date"
+          -->
       <input
         type="date"
         name="appointment_date"
@@ -238,8 +254,11 @@
         max="2026-12-31"
       />
       <br /><br />
+      <!-- label for Describe Your Condition -->
       <label>Describe Your Condition</label><br />
+      <!-- textarea name="condition" rows="6" cols="40" -->
       <textarea name="condition" rows="6" cols="40"></textarea><br /><br />
+      <!-- Button -->
       <button type="submit">Book Appointment</button>
       <hr />
     </form>
@@ -260,6 +279,7 @@
     <h2>Health Resources</h2>
     <ol>
       <li>
+        <!-- links for our health Resources -->
         <a href="https://www.who.int/" target="_blank"
           >World Health Organization</a
         >
@@ -272,11 +292,11 @@
       </li>
     </ol>
     <hr />
-    <h2>Contact Information</h2>
+    <h2 id="contact">Contact Information</h2>
     <p>
       phone: +234 800 123 4567 <br />
       Email: info@shifahospital.com <br />
-      Address: No. 15 Health Avenue, Kano, Nigeria
+      Address: No. 15 Health Avenue, Lagos Nigeria
     </p>
     <hr />
     <h2>© 2026 Shifa Specialist Hospital</h2>
